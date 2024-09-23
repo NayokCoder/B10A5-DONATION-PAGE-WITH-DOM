@@ -55,7 +55,7 @@
                 <!-- Coin Icon and Donation Amount -->
                 <div class="flex gap-3 items-center">
                     <img src="assets/coin.png" alt="Coin Icon" class="h-8">
-                    <h3 class="font-medium text-xl text-clifford">5500 BDT</h3>
+                    <h3 id="my-amount" class="font-medium text-xl text-clifford">5500 BDT</h3>
                 </div>
             </div>
         </nav>
@@ -99,7 +99,7 @@
             </div>
         </article>
 
-        <!-- Repeat similar structure for additional donation articles -->
+        <!-- FENI  donation articles -->
         <article class="mt-8">
             <div class="flex flex-col md:flex-row justify-between p-4 md:p-8 bg-base-100 shadow-xl gap-4">
                 <figure class="w-full md:w-1/2">
@@ -108,7 +108,7 @@
                 <div class="w-full md:w-1/2">
                     <button class="btn flex gap-3 items-center mt-5 mb-6">
                         <img src="assets/coin.png" alt="Coin Icon">
-                        <h3 class="font-medium text-xl text-clifford">5500 BDT</h3>
+                        <h3 id="feni-total-donation" class="font-medium text-xl text-clifford">5500 BDT</h3>
                     </button>
                     <h2 class="card-title font-bold text-xl mb-4">Donate for Flood at Feni, Bangladesh</h2>
                     <p class="text-base text-color mb-6">
@@ -117,8 +117,10 @@
                         contribution, big or small, makes a difference. Please join us in supporting the relief
                         efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5" />
-                    <button class="btn btn-primary w-full border-none text-black font-semibold text-xl">Donate
+                    <input id="feni-input" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full mb-5" />
+                    <button id="feni-btn"
+                        class="btn btn-primary w-full border-none text-black font-semibold text-xl">Donate
                         Now</button>
                 </div>
             </div>
