@@ -12,17 +12,17 @@
     <!-- FONT -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tailwind.config.js">
 </head>
 
 <body class="lexend">
     <header>
         <!-- NAVIGATION PART -->
-        <nav class="bg-orange-50">
+        <nav class="bg-base-300">
             <div class="navbar justify-around py-10  mx-auto">
                 <!-- Blog Button -->
-                <button class="btn btn-success border-none font-semibold text-xl ">Blog</button>
+                <button id="home" class="btn button-3 border-none font-semibold text-xl ">Home</button>
 
                 <!-- Logo and Title -->
                 <div class="flex gap-3 items-center">
@@ -81,8 +81,11 @@
     </header>
 
 
-
-
+    <script>
+        document.getElementById("home").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
 
 </body>
 
