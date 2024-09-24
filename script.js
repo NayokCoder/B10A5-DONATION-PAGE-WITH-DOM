@@ -59,7 +59,9 @@ document
     const currentDate = new Date();
     const date = currentDate.toLocaleDateString();
     const time = currentDate.toLocaleTimeString();
+
     createPara.innerText = `Donation made on: ${date} at ${time}`;
+
     creatDiv.appendChild(createHeading);
     creatDiv.appendChild(createPara);
     history.appendChild(creatDiv);
@@ -183,14 +185,25 @@ document.getElementById("quota-btn").addEventListener("click", function (even) {
 document.getElementById("donation").addEventListener("click", function (even) {
   even.preventDefault();
   document.getElementById("history").classList.add("hidden");
+  document
+    .getElementById("history-home")
+    .classList.remove("button-3", "text-white");
   document.getElementById("donation-section").classList.remove("hidden");
+  document.getElementById("donation").classList.add("button-3", "text-white");
 });
 document
   .getElementById("history-home")
   .addEventListener("click", function (even) {
     even.preventDefault();
     document.getElementById("donation-section").classList.add("hidden");
+    document
+      .getElementById("donation")
+      .classList.remove("button-3", "text-white");
+
     document.getElementById("history").classList.remove("hidden");
+    document
+      .getElementById("history-home")
+      .classList.add("button-3", "text-white");
   });
 
 // link to Blog

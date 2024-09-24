@@ -16,27 +16,38 @@
     <link rel="stylesheet" href="tailwind.config.js">
 </head>
 
-<body class="lexend">
-    <header>
-        <!-- NAVIGATION PART -->
-        <nav class="bg-base-300">
-            <div class="navbar justify-around py-10  mx-auto">
-                <!-- Blog Button -->
-                <button id="home" class="btn button-3 border-none font-semibold text-xl ">Home</button>
 
+<body class="lexend">
+    <div class="w-full h-24 bg-base-300 absolute"></div>
+    <header class=" sticky top-0 z-10 backdrop-blur-sm mx-auto ">
+        <!-- Navigation Section -->
+        <nav class="">
+            <div class="navbar container flex flex-col sm:flex-row justify-between py-5 mx-auto">
+                <!-- Home Button -->
+                <button id="home" class="btn button-3 border-none font-semibold text-xl ">Home</button>
                 <!-- Logo and Title -->
-                <div class="flex gap-3 items-center">
+                <div class=" flex gap-3 items-center">
                     <img src="assets/logo.png" alt="Logo" class="h-10">
                     <a class="font-semibold text-xl">Donate Bangladesh</a>
                 </div>
-
                 <!-- Coin Icon and Donation Amount -->
-                <div class="flex gap-3 items-center">
+                <div class="flex gap-3 items-center mt-2 sm:mt-0">
                     <img src="assets/coin.png" alt="Coin Icon" class="h-8">
-                    <h3 class="font-medium text-xl text-clifford">5500 BDT</h3>
+                    <h3 id="my-amount" class="font-medium text-lg text-clifford">5500 BDT</h3>
                 </div>
             </div>
+
+            <!-- Action Buttons -->
+            <!-- <figure class="flex flex-col sm:flex-row justify-center gap-5 mt-12">
+                <button id="donation"
+                    class="btn btn-xs button-3 text-white sm:btn-sm md:btn-md lg:btn-lg w-full sm:w-auto mb-2">Donation</button>
+                <button id="history-home"
+                    class="btn btn-xs  sm:btn-sm md:btn-md lg:btn-lg w-full sm:w-auto">History</button>
+            </figure> -->
         </nav>
+        </div>
+
+
         <section class="container mx-auto mt-16 ">
             <div class="flex  relative">
 
@@ -50,14 +61,20 @@
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        page so that programs can change the document structure, style, and content. The DOM represents
+                        the document as nodes and objects; that way, programming languages can interact with the page.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 mt-5">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>To select an element from the DOM (Document Object Model) in JavaScript, you can use several
+                        methods. Here are the most common ones:
+                        *getElementById,*getElementsByClassName,*getElementsByTagName,*querySelector,*querySelectorAll.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 mt-5">
@@ -65,7 +82,9 @@
                 <div class="collapse-title text-xl font-medium">What event delegation in the context of the DOM, and why
                     is it useful</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>Event delegation is a JavaScript technique that involves attaching a single event listener to a
+                        parent element instead of multiple listeners to individual child elements. When an event occurs
+                        on a child, it bubbles up to the parent, allowing the parent to handle the event.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 mt-5">
@@ -73,7 +92,8 @@
                 <div class="collapse-title text-xl font-medium">How do you mainupulate an element's attributes and
                     styling using DOM ? </div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>You can manipulate an element's attributes and styling in the DOM using JavaScript. Here are the
+                        key methods: *Get an Attribute,*Set an Attribute.*Remove an Attribute ETC.</p>
                 </div>
             </div>
         </section>
