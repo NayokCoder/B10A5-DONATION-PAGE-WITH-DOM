@@ -10,10 +10,3 @@
 .text-color {
   color: rgba(17, 17, 17, 0.7);
 }
-
-/* Optional: Customize backdrop filter for compatibility */
-@supports (backdrop-filter: blur(10px)) {
-  .backdrop-blur-md {
-    backdrop-filter: blur(10px);
-  }
-}
