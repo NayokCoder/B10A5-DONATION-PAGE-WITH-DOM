@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 .lexend {
@@ -10,3 +11,24 @@
 .text-color {
   color: rgba(17, 17, 17, 0.7);
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+}
+
+.btn-primary {
+  background-color: rgba(180, 244, 97, 1);
+}
+.text-color {
+  color: rgba(17, 17, 17, 0.7);
+}
+
+/* Optional: Customize backdrop filter for compatibility */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-md {
+    backdrop-filter: blur(10px);
+  }
+}
+>>>>>>> bdcbe7f45ac063dd3f206218552b0e3a7163b01b
